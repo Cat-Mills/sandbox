@@ -1,0 +1,105 @@
+@import url("https://fonts.cdnfonts.com/css/luminari");
+@import url("https://fonts.cdnfonts.com/css/orchidee");
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+section,
+aside {
+    text-align: center;
+    padding-bottom: 20px;
+    transition: all 200ms;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    transition: all 200ms;
+}
+
+button {
+    font-size: 18px;
+    transition: all 200ms;
+    background: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 15px;
+    border: 3px solid;
+    border-radius: 4px;
+}
+
+#classPrompt {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 4px 6px;
+    border-style: dashed;
+    border-width: 2px;
+    border-radius: 0px;
+}
+
+main {
+    padding: 50px;
+    transition: all 200ms;
+    margin-top: 20px;
+}
+
+/* TAB-Rogue */
+.rogue {
+    background: #3b2121;
+    font-family: "Luminari", serif;
+    text-shadow: 2px 2px 5px #ff0000;
+    border-color: #8b0000;
+    border-style: ridge;
+    border-right-width: 6px;
+}
+
+body.rogue>header {
+    color: black;
+    background: #202020;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.75);
+}
+
+button.rogue {
+    margin: 12px;
+    border-radius: 0px;
+    background: darkred;
+    border-color: #000000bf;
+    text-shadow: 2px 2px 5px red;
+    font-family: "Luminari", serif;
+}
+
+.rogue #classPrompt {
+    background-color: darkred;
+}
+
+/*TAB-Barbarian*/
+.barbarian {
+    background-color: #432818;
+    font-family: "Orchidee", sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #ffe6a7;
+    border-color: #6f1d1b;
+    border-style: double;
+}
+
+button.barbarian {
+    margin: 12px;
+    border-radius: 3px;
+    border-width: 6px;
+    background-color: #99582A;
+}
+
+body.barbarian>header {
+    color: #432818;
+    background: #BB9457;
+    border-bottom: 8px double rgba(0, 0, 0, 0.75);
+}

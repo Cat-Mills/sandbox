@@ -1,4 +1,14 @@
 
+const selectClass = (theme) => {
+    const body = document.querySelector("body")
+    body.className = theme
+    const buttons = document.querySelectorAll("button")
+    for (let button of buttons){
+        button.className = theme
+    }
+}
+
+
 
 class Character {
     constructor(name, gender, race, hp = 100, ac = 10){
@@ -34,7 +44,7 @@ class Character {
 class Rogue extends Character {
     constructor(name, gender, race){
         super(name, gender, race, 110, 13)
-        super.addItem('dagger','Leather Armor')
+        super.addItem(['dagger','Leather Armor'])
     }
 }
 
@@ -48,14 +58,14 @@ class Wizard extends Character {
 class Barbarian extends Character {
     constructor(name, gender, race){
         super(name, gender, race, 140, 13)
-        super.addItem('Club','Fur Armor')
+        super.addItem(['Club','Fur Armor'])
     }
 }
 
 class Paladin extends Character {
     constructor(name, gender, race){
         super(name, gender, race, 120, 16)
-        super.addItem('Sword','Steel Armor')
+        super.addItem(['Sword','Steel Armor'])
     }
 }
 
