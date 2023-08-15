@@ -1,0 +1,48 @@
+
+const obj = {
+    value: 5,
+    next: {
+        value: 7,
+        next: {
+            value: 8,
+            next: {
+                value: 5,
+                next: {
+                    value: 11,
+                    next: null
+                }
+            }
+        }
+    }
+}
+
+//This one works
+function sumList(currentNode){
+    let sum = currentNode.value
+    while(currentNode.next){
+        currentNode = currentNode.next
+        sum = sum + currentNode.value
+    }
+    return sum
+}
+
+//This one does it recursively
+function recurseSumList(currentNode){
+    if (!currentNode.next){
+        return value
+    } else {
+        return recurseSumList() + currentNode.value
+    }
+}
+
+
+
+
+
+//Incomplete code
+// function findValue(obj){
+//     sum = 0
+//     while(key === true){
+//         sum += key
+//     }
+// }
